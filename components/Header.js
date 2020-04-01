@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Link from "next/link";
-// import "./Header.css";
 
 function Header() {
   const [showDropDownContent, setShowDropDownContent] = useState(false);
