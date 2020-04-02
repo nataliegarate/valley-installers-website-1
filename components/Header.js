@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import Head from "next/head";
 
 function Header() {
   const [showDropDownContent, setShowDropDownContent] = useState(false);
@@ -13,13 +14,21 @@ function Header() {
   }
   return (
     <>
+      <Head>
+        <script
+          src="https://kit.fontawesome.com/709bddccc9.js"
+          crossorigin="anonymous"
+        ></script>
+      </Head>
       <header>
         <div className="nav">
           <div id="text-container">
             <p id="name-header">Valley Installers</p>
             <div id="right-header">
-              <Link id="about-header" href="/about-us">
-                <a title="About">About</a>
+              <Link href="/about-us">
+                <a id="about-header" title="About">
+                  About
+                </a>
               </Link>
               <a
                 id="contact-container"
@@ -32,14 +41,14 @@ function Header() {
 
             <div
               onClick={handleNavClick}
-              class="navbar"
+              className="navbar"
               style={{
                 borderBottomRightRadius: showDropDownContent ? "0px" : "7px",
                 borderBottomLeftRadius: showDropDownContent ? "0px" : "7px"
               }}
             >
-              <div class="dropdown">
-                <button class="dropbtn">
+              <div className="dropdown">
+                <button className="dropbtn">
                   <p>About</p>
                   <div id="icon-container">
                     <div id="icon-border"></div>
@@ -47,20 +56,22 @@ function Header() {
                       style={{
                         display: showDropDownContent ? "none" : "inline"
                       }}
-                      class="fa fa-caret-down"
+                      className="fa fa-caret-down"
                     ></i>
                     <i
                       style={{
                         display: showDropDownContent ? "inline" : "none"
                       }}
-                      class="fa fa-caret-up"
+                      className="fa fa-caret-up"
                     ></i>
                   </div>
                 </button>
                 <div id="dropdown-content-container">
                   {showDropDownContent && (
-                    <div class="dropdown-content">
-                      <Link to="/about-us">About</Link>
+                    <div className="dropdown-content">
+                      <Link href="/about-us">
+                        <a>About</a>
+                      </Link>
                       <a href="mailto:valleyinstallers@yahoo.com">Contact Us</a>
                       <p></p>
                     </div>
@@ -68,6 +79,17 @@ function Header() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+
+        <div className="image-container-header">
+          <div id="image-text">
+            <h1>
+              Quality Laminte Countertops Serving The Greater Flathead Area
+            </h1>
+            <Link href="/about-us">
+              <a>Learn More About Us →</a>
+            </Link>
           </div>
         </div>
       </header>
@@ -117,8 +139,8 @@ function Header() {
           border-radius: 1px;
         }
 
-        #about-header p {
-          margin: 13px;
+        #about-header {
+          padding: 13px;
         }
 
         #contact-container:hover,
@@ -127,7 +149,7 @@ function Header() {
           background-color: white;
         }
 
-        #about-header:hover p {
+        #about-header:hover {
           color: black;
         }
 
@@ -144,7 +166,7 @@ function Header() {
           align-items: center;
         }
 
-        #about-header p,
+        #right-header a,
         #contact-container p {
           text-transform: uppercase;
           font-size: 14px;
@@ -181,6 +203,7 @@ function Header() {
           border-radius: 2px;
           width: 260px;
           padding: 10px 0px;
+          text-align: center;
         }
 
         .image-container-header a:hover {
@@ -304,6 +327,10 @@ function Header() {
           }
           .navbar {
             display: inline;
+          }
+
+          #right-header {
+            display: none;
           }
         }
 

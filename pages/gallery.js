@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
-// import Header from "../components/Footer/Footer";
+import Footer from "../components/Footer";
+import Layout from "../components/layout";
 
 let images = [
   "https://dummyimage.com/480x390/ededed/fcfcfc.jpg",
@@ -11,7 +12,7 @@ let images = [
 
 function GalleryView(props) {
   return (
-    <>
+    <Layout>
       <Header />
       <div className="content-view">
         <div className="gallery-container">
@@ -22,7 +23,6 @@ function GalleryView(props) {
       </div>
       <Footer />
       <style jsx>
-        {" "}
         {`
           .gallery - container {
             display: flex;
@@ -63,7 +63,7 @@ function GalleryView(props) {
           }
         `}
       </style>
-    </>
+    </Layout>
   );
 }
 

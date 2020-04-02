@@ -1,11 +1,10 @@
-// import React from "react";
 import Header from "../components/Header";
-// import Footer from "../Footer/Footer";
-// import "./AboutView.css";
+import Footer from "../components/Footer";
+import Layout from "../components/layout";
 
 function About() {
   return (
-    <>
+    <Layout>
       <Header />
 
       <div className="content-view">
@@ -26,7 +25,7 @@ function About() {
           <p>Valley Installers are licensed and insured.</p>
         </div>
       </div>
-      {/* <Footer /> */}
+      <Footer />
       <style jsx>{`
         #about-text-container {
           display: flex;
@@ -55,7 +54,7 @@ function About() {
           }
         }
       `}</style>
-    </>
+    </Layout>
   );
 }
 
