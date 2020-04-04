@@ -14,12 +14,12 @@ function Header() {
   }
   return (
     <>
-      <Head>
+      {/* <Head>
         <script
           src="https://kit.fontawesome.com/709bddccc9.js"
           crossorigin="anonymous"
         ></script>
-      </Head>
+      </Head> */}
       <header>
         <div className="nav">
           <div id="text-container">
