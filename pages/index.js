@@ -18,6 +18,7 @@ function HomeView(props) {
           content="laminate countertops, countertop installation, kitchen, bathroom, kalispell, whitefish, coulmbia falls, flathead, bigfork"
         ></meta>
         <link rel="canonical" href="https://valleyinstallers.com" />
+        <meta name="robots" content="index, follow" />
 
         <meta property="og:type" content="website" />
 

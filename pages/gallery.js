@@ -2,21 +2,25 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Layout from "../components/layout";
+import Head from "next/head";
 
 let images = [
   "https://dummyimage.com/480x390/ededed/fcfcfc.jpg",
   "https://dummyimage.com/480x390/ededed/fcfcfc.jpg",
   "https://dummyimage.com/480x390/ededed/fcfcfc.jpg",
-  "https://dummyimage.com/480x390/ededed/fcfcfc.jpg"
+  "https://dummyimage.com/480x390/ededed/fcfcfc.jpg",
 ];
 
 function GalleryView(props) {
   return (
     <Layout>
+      <Head>
+        <meta name="robots" content="noindex, nofollow" />
+      </Head>
       <Header />
       <div className="content-view">
         <div className="gallery-container">
-          {images.map(image => (
+          {images.map((image) => (
             <img src={image} />
           ))}
         </div>
