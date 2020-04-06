@@ -2,53 +2,85 @@ import Link from "next/link";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Layout from "../components/layout";
+import Head from "next/head";
 
 function HomeView(props) {
   return (
-    <Layout>
-      <Header />
-      <div className="content-view">
-        <div id="countertop-text" className="col-1">
-          <h2> Laminate Countertops</h2>
-          <p className="countertop-sub-text">
-            We specialize in laminate countertops. We use Wilsonart, Formica or
-            Nevamar laminate giving you a wide range of selection. We also offer
-            you a variety of edging, from a standard square edge to a beveled
-            edge.
-          </p>
-          <p className="countertop-sub-text">
-            With the Wilsonart HD and the Formica FX lines, your laminate
-            countertops can look like traditional hardsurface tops at a fraction
-            of the cost.
-          </p>
-          <p className="countertop-sub-text">
-            There are more benefits to laminate that just the price. They are
-            more bacterial and scratch resistant than hardsurface. And you have
-            a greater variety of colors and patterns to choose from.
-          </p>
-          <p className="countertop-sub-text">
-            We are also proud to introduce you to our process of installing
-            undermount sink in laminate. So yes you can have an undermount sink
-            with a laminate top!
-          </p>
+    <div>
+      <Head>
+        <title>Valley Installers Quality Countertop Installation</title>
+        <meta
+          name="description"
+          content="Hire Valley Installers for quality laminate countertop installation"
+        ></meta>
+        <meta
+          name="keywords"
+          content="laminate countertops, countertop installation, kitchen, bathroom, kalispell, whitefish, coulmbia falls, flathead, bigfork"
+        ></meta>
+        <link rel="canonical" href="https://valleyinstallers.com" />
+        <meta name="robots" content="index, follow" />
 
-          <p className="countertop-sub-text" id="see-photos">
-            <Link href="/gallery">
-              <a id="see-gallery" title="See All Photos">
-                See All Photos →
-              </a>
-            </Link>
-          </p>
+        <meta property="og:type" content="website" />
+
+        <meta
+          property="og:title"
+          content="Valley Installers Quality Laminate Countertop Installation"
+        />
+        <meta
+          property="og:description"
+          content="Hire Valley Installers for quality cabinet and laminate countertop installation"
+        />
+
+        {/* <meta property="og:image" content="LINK TO THE IMAGE FILE" /> */}
+
+        <meta property="og:url" content="https://valleyinstallers.com" />
+
+        <meta property="og:site_name" content="Valley Installers" />
+      </Head>
+      <Layout>
+        <Header />
+        <div className="content-view">
+          <div id="countertop-text" className="col-1">
+            <h2> Laminate Countertops</h2>
+            <p className="countertop-sub-text">
+              We specialize in laminate countertops. We use Wilsonart, Formica
+              or Nevamar laminate giving you a wide range of selection. We also
+              offer you a variety of edging, from a standard square edge to a
+              beveled edge.
+            </p>
+            <p className="countertop-sub-text">
+              With the Wilsonart HD and the Formica FX lines, your laminate
+              countertops can look like traditional hardsurface tops at a
+              fraction of the cost.
+            </p>
+            <p className="countertop-sub-text">
+              There are more benefits to laminate that just the price. They are
+              more bacterial and scratch resistant than hardsurface. And you
+              have a greater variety of colors and patterns to choose from.
+            </p>
+            <p className="countertop-sub-text">
+              We are also proud to introduce you to our process of installing
+              undermount sink in laminate. So yes you can have an undermount
+              sink with a laminate top!
+            </p>
+
+            <p className="countertop-sub-text" id="see-photos">
+              <Link href="/gallery">
+                <a id="see-gallery" title="See All Photos">
+                  See All Photos →
+                </a>
+              </Link>
+            </p>
+          </div>
+          <div className="col-2">
+            <img
+              className="countertops-photo"
+              src="https://i.imgur.com/3SG4Moc.jpg?1"
+            />
+          </div>
         </div>
-        <div className="col-2">
-          <img
-            className="countertops-photo"
-            src="https://i.imgur.com/3SG4Moc.jpg?1"
-          />
-        </div>
-      </div>
-      <Footer />
-      <style>{`
+        <Footer />
+        <style>{`
         .col-2 img {
             width: inherit;
             }
@@ -93,7 +125,8 @@ function HomeView(props) {
         }
     }
 `}</style>
-    </Layout>
+      </Layout>
+    </div>
   );
 }
 

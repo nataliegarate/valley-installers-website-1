@@ -23,7 +23,9 @@ function Header() {
       <header>
         <div className="nav">
           <div id="text-container">
-            <p id="name-header">Valley Installers</p>
+            <Link href="/">
+              <p id="name-header">Valley Installers</p>
+            </Link>
             <div id="right-header">
               <Link href="/about-us">
                 <a id="about-header" title="About">
@@ -44,7 +46,7 @@ function Header() {
               className="navbar"
               style={{
                 borderBottomRightRadius: showDropDownContent ? "0px" : "7px",
-                borderBottomLeftRadius: showDropDownContent ? "0px" : "7px"
+                borderBottomLeftRadius: showDropDownContent ? "0px" : "7px",
               }}
             >
               <div className="dropdown">
@@ -54,13 +56,13 @@ function Header() {
                     <div id="icon-border"></div>
                     <i
                       style={{
-                        display: showDropDownContent ? "none" : "inline"
+                        display: showDropDownContent ? "none" : "inline",
                       }}
                       className="fa fa-caret-down"
                     ></i>
                     <i
                       style={{
-                        display: showDropDownContent ? "inline" : "none"
+                        display: showDropDownContent ? "inline" : "none",
                       }}
                       className="fa fa-caret-up"
                     ></i>
