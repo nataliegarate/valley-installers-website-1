@@ -28,7 +28,7 @@ function GalleryView(props) {
       <Footer />
       <style jsx>
         {`
-          .gallery - container {
+          .gallery-container {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -40,7 +40,7 @@ function GalleryView(props) {
             margin: 10px;
           }
           @media only screen and (max-width: 1070px) {
-            .gallery - container img {
+            .gallery-container img {
               width: 380px;
             }
             .gallery-container {
@@ -49,7 +49,7 @@ function GalleryView(props) {
           }
 
           @media only screen and (max-width: 870px) {
-            .gallery - container {
+            .gallery-container {
               flex-direction: column;
               width: 470px;
             }
@@ -58,7 +58,7 @@ function GalleryView(props) {
             }
           }
           @media only screen and (max-width: 460px) {
-            .gallery - container img {
+            .gallery-container img {
               width: 300px;
             }
             .gallery-container {
