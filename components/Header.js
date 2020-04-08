@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Head from "next/head";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faEnvelope,
+  faCaretDown,
+  faCaretUp,
+} from "@fortawesome/free-solid-svg-icons";
 
 function Header() {
   const [showDropDownContent, setShowDropDownContent] = useState(false);
@@ -36,7 +42,12 @@ function Header() {
                 id="contact-container"
                 href="mailto:valleyinstallers@yahoo.com"
               >
-                <i class="far fa-envelope"></i>
+                <FontAwesomeIcon
+                  id="contact-icon"
+                  style={{ width: "15px" }}
+                  icon={faEnvelope}
+                  size="xs"
+                />
                 <p>Contact Us</p>
               </a>
             </div>
@@ -54,18 +65,26 @@ function Header() {
                   <p>About</p>
                   <div id="icon-container">
                     <div id="icon-border"></div>
-                    <i
+                    <FontAwesomeIcon
                       style={{
                         display: showDropDownContent ? "none" : "inline",
+                        width: "8px",
+                        color: "#999",
+                        padding: "0 5px",
                       }}
-                      className="fa fa-caret-down"
-                    ></i>
-                    <i
+                      id="contact-icon"
+                      icon={faCaretDown}
+                    />
+                    <FontAwesomeIcon
                       style={{
                         display: showDropDownContent ? "inline" : "none",
+                        width: "8px",
+                        color: "#999",
+                        padding: "0 5px",
                       }}
-                      className="fa fa-caret-up"
-                    ></i>
+                      id="contact-icon"
+                      icon={faCaretUp}
+                    />
                   </div>
                 </button>
                 <div id="dropdown-content-container">
@@ -151,6 +170,10 @@ function Header() {
           background-color: white;
         }
 
+        #contact-icon:hover {
+          color: black;
+        }
+
         #about-header:hover {
           color: black;
         }
@@ -160,7 +183,7 @@ function Header() {
         }
 
         #contact-container p {
-          margin-left: 5px;
+          margin-left: 10px;
         }
 
         #right-header {
