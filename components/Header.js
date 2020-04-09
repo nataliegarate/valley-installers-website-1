@@ -38,6 +38,11 @@ function Header() {
                   About
                 </a>
               </Link>
+              <Link href="/gallery">
+                <a id="about-header" title="About">
+                  Gallery
+                </a>
+              </Link>
               <a
                 id="contact-container"
                 href="mailto:valleyinstallers@yahoo.com"
@@ -93,6 +98,9 @@ function Header() {
                       <Link href="/about-us">
                         <a>About</a>
                       </Link>
+                      <Link href="/about-us">
+                        <a>Gallery</a>
+                      </Link>
                       <a href="mailto:valleyinstallers@yahoo.com">Contact Us</a>
                       <p></p>
                     </div>
@@ -105,9 +113,7 @@ function Header() {
 
         <div className="image-container-header">
           <div id="image-text">
-            <h1>
-              Quality Laminte Countertops Serving The Greater Flathead Area
-            </h1>
+            <h1>Quality Laminte Countertops Serving The Flathead Valley</h1>
             <Link href="/about-us">
               <a>Learn More About Us →</a>
             </Link>
@@ -116,11 +122,13 @@ function Header() {
       </header>
 
       <style jsx>{`
-        header p,
         header h1 {
           color: #ffffff;
+          text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.99);
         }
-
+        header p {
+          color: #ffffff;
+        }
         .nav {
           background-color: black;
           height: 70px;
@@ -151,9 +159,14 @@ function Header() {
           margin-left: 20px;
           border: 2px solid white;
           border-radius: 3px;
-          padding: 0px 15px;
+          padding: 10px;
           text-decoration: none;
           color: #ffffff;
+        }
+
+        #contact-container p {
+          padding: 0px;
+          margin: 0px;
         }
 
         #about-header {
@@ -198,7 +211,7 @@ function Header() {
         }
 
         .image-container-header {
-          background-image: url("https://i.imgur.com/0E37FoQ.jpg");
+          background-image: url("https://i.imgur.com/t1vXRIW.jpg");
           height: 376px;
           width: 100%;
           font-weight: bold;

@@ -5,10 +5,18 @@ import Layout from "../components/layout";
 import Head from "next/head";
 
 let images = [
-  "https://dummyimage.com/480x390/ededed/fcfcfc.jpg",
-  "https://dummyimage.com/480x390/ededed/fcfcfc.jpg",
-  "https://dummyimage.com/480x390/ededed/fcfcfc.jpg",
-  "https://dummyimage.com/480x390/ededed/fcfcfc.jpg",
+  "/valley2.jpg",
+  "/valley3.jpg",
+  "/valley1.jpg",
+  "/valley4.jpg",
+  "/valley5.jpg",
+  "/valley6.jpg",
+  "/valley7.jpg",
+  "/valley8.jpg",
+  "/valley9.jpg",
+  "/valley10.jpg",
+  "/valley11.jpg",
+  "/valley12.jpg",
 ];
 
 function GalleryView(props) {
@@ -38,6 +46,7 @@ function GalleryView(props) {
           }
           .gallery-container img {
             margin: 10px;
+            width: 480px;
           }
           @media only screen and (max-width: 1070px) {
             .gallery-container img {

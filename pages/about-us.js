@@ -39,11 +39,7 @@ function About() {
       <Header />
 
       <div className="content-view">
-        <img
-          className="col-1"
-          alt="placeholder"
-          src="https://wearemortar.com/wp-content/uploads/2019/09/placeholder.png"
-        />
+        <img className="col-1" alt="placeholder" src="/valley10.jpg" />
         <div id="about-text-container" className="col-2">
           <h2>About Us</h2>
           <p>

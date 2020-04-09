@@ -80,10 +80,7 @@ function HomeView(props) {
             </p>
           </div>
           <div className="col-2">
-            <img
-              className="countertops-photo"
-              src="https://i.imgur.com/3SG4Moc.jpg?1"
-            />
+            <img className="countertops-photo" src="/valley7.jpg" />
           </div>
         </div>
         <Footer />
