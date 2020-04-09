@@ -29,9 +29,13 @@ function About() {
             made them the first and only choice for laminate countertop installation"
         />
 
-        {/* <meta property="og:image" content="LINK TO THE IMAGE FILE" /> */}
+        <meta property="og:image" content="/valley10.jpg" />
 
-        <meta property="og:url" content="https://valleyinstallers.com/about" />
+        <meta
+          property="og:url"
+          alt="Kitchen with laminate countertops"
+          content="https://valleyinstallers.com/about"
+        />
 
         <meta property="og:site_name" content="Valley Installers" />
       </Head>
@@ -41,8 +45,8 @@ function About() {
       <div className="content-view">
         <img
           className="col-1"
-          alt="placeholder"
-          src="https://wearemortar.com/wp-content/uploads/2019/09/placeholder.png"
+          alt="Kitchen with laminate countertops"
+          src="/valley10.jpg"
         />
         <div id="about-text-container" className="col-2">
           <h2>About Us</h2>
