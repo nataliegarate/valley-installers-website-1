@@ -38,7 +38,7 @@ function HomeView(props) {
           content="Hire Valley Installers for quality cabinet and laminate countertop installation"
         />
 
-        {/* <meta property="og:image" content="LINK TO THE IMAGE FILE" /> */}
+        <meta property="og:image" content="/valley7.jpg" />
 
         <meta property="og:url" content="https://valleyinstallers.com" />
 
@@ -80,7 +80,11 @@ function HomeView(props) {
             </p>
           </div>
           <div className="col-2">
-            <img className="countertops-photo" src="/valley7.jpg" />
+            <img
+              className="countertops-photo"
+              src="/valley7.jpg"
+              alt="Kitchen with laminate countertop[s"
+            />
           </div>
         </div>
         <Footer />

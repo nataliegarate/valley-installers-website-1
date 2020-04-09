@@ -5,18 +5,19 @@ import Layout from "../components/layout";
 import Head from "next/head";
 
 let images = [
-  "/valley2.jpg",
+  "/valley8.jpg",
   "/valley3.jpg",
   "/valley1.jpg",
-  "/valley4.jpg",
   "/valley5.jpg",
+  "/valley4.jpg",
+
   "/valley6.jpg",
   "/valley7.jpg",
-  "/valley8.jpg",
   "/valley9.jpg",
   "/valley10.jpg",
   "/valley11.jpg",
   "/valley12.jpg",
+  "/valley2.jpg",
 ];
 
 function GalleryView(props) {
