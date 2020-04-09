@@ -8,8 +8,14 @@ import {
   faCaretUp,
 } from "@fortawesome/free-solid-svg-icons";
 
-function Header() {
+function Header(props) {
   const [showDropDownContent, setShowDropDownContent] = useState(false);
+  const [currentPage, setCurrentPage] = useState(props.page);
+
+  function handleNavSelection(page) {
+    console.log(page, currentPage);
+    // setCurrentPage(page);
+  }
 
   function handleNavClick() {
     if (showDropDownContent) {
@@ -67,7 +73,7 @@ function Header() {
             >
               <div className="dropdown">
                 <button className="dropbtn">
-                  <p>About</p>
+                  <p>{currentPage}</p>
                   <div id="icon-container">
                     <div id="icon-border"></div>
                     <FontAwesomeIcon
@@ -96,10 +102,12 @@ function Header() {
                   {showDropDownContent && (
                     <div className="dropdown-content">
                       <Link href="/about-us">
-                        <a>About</a>
+                        <a onClick={() => handleNavSelection("About")}>About</a>
                       </Link>
-                      <Link href="/about-us">
-                        <a>Gallery</a>
+                      <Link href="/gallery">
+                        <a onClick={() => handleNavSelection("Gallery")}>
+                          Gallery
+                        </a>
                       </Link>
                       <a href="mailto:valleyinstallers@yahoo.com">Contact Us</a>
                       <p></p>

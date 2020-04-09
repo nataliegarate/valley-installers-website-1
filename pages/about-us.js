@@ -40,7 +40,7 @@ function About() {
         <meta property="og:site_name" content="Valley Installers" />
       </Head>
 
-      <Header />
+      <Header page={"About"} />
 
       <div className="content-view">
         <img
