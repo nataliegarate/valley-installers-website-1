@@ -211,7 +211,7 @@ function Header() {
         }
 
         .image-container-header {
-          background-image: url("https://i.imgur.com/t1vXRIW.jpg");
+          background-image: url("/valleyheader.jpg");
           height: 376px;
           width: 100%;
           font-weight: bold;
