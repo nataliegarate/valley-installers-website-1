@@ -45,7 +45,7 @@ function HomeView(props) {
         <meta property="og:site_name" content="Valley Installers" />
       </Head>
       <Layout>
-        <Header page={"About"} />
+        <Header page={"Home"} />
         <div className="content-view">
           <div id="countertop-text" className="col-1">
             <h2> Laminate Countertops</h2>

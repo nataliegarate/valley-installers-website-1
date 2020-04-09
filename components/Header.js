@@ -10,12 +10,7 @@ import {
 
 function Header(props) {
   const [showDropDownContent, setShowDropDownContent] = useState(false);
-  const [currentPage, setCurrentPage] = useState(props.page);
-
-  function handleNavSelection(page) {
-    console.log(page, currentPage);
-    // setCurrentPage(page);
-  }
+  const [currentPage] = useState(props.page);
 
   function handleNavClick() {
     if (showDropDownContent) {
@@ -36,7 +31,7 @@ function Header(props) {
         <div className="nav">
           <div id="text-container">
             <Link href="/">
-              <p id="name-header">Valley Installers</p>
+              <a id="name-header">Valley Installers</a>
             </Link>
             <div id="right-header">
               <Link href="/about-us">
@@ -82,6 +77,7 @@ function Header(props) {
                         width: "8px",
                         color: "#999",
                         padding: "0 5px",
+                        margin: "auto",
                       }}
                       id="contact-icon"
                       icon={faCaretDown}
@@ -92,6 +88,7 @@ function Header(props) {
                         width: "8px",
                         color: "#999",
                         padding: "0 5px",
+                        margin: "auto",
                       }}
                       id="contact-icon"
                       icon={faCaretUp}
@@ -101,13 +98,14 @@ function Header(props) {
                 <div id="dropdown-content-container">
                   {showDropDownContent && (
                     <div className="dropdown-content">
+                      <Link href="/">
+                        <a>Home</a>
+                      </Link>
                       <Link href="/about-us">
-                        <a onClick={() => handleNavSelection("About")}>About</a>
+                        <a>About</a>
                       </Link>
                       <Link href="/gallery">
-                        <a onClick={() => handleNavSelection("Gallery")}>
-                          Gallery
-                        </a>
+                        <a>Gallery</a>
                       </Link>
                       <a href="mailto:valleyinstallers@yahoo.com">Contact Us</a>
                       <p></p>
@@ -330,17 +328,6 @@ function Header(props) {
           margin: 5px;
         }
 
-        .fa-caret-down:before {
-          color: #999;
-          padding: 0 5px;
-          margin-top: 10px;
-        }
-
-        .fa-caret-up:before {
-          color: #999;
-          padding: 0 5px;
-        }
-
         #icon-border {
           border-left: 1px solid #999;
           height: 30px;
@@ -349,14 +336,6 @@ function Header(props) {
         #icon-container {
           display: flex;
           flex-direction: row;
-        }
-
-        .fa.fa-caret-down {
-          margin-top: 10px;
-        }
-
-        .fa.fa-caret-up {
-          margin-top: 10px;
         }
 
         @media only screen and (max-width: 1070px) {
