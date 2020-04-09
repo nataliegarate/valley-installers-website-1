@@ -20,17 +20,17 @@ let images = [
   "/valley2.jpg",
 ];
 
-function GalleryView(props) {
+function GalleryView() {
   return (
     <Layout>
       <Head>
         <meta name="robots" content="noindex, nofollow" />
       </Head>
-      <Header />
+      <Header page={"Gallery"} />
       <div className="content-view">
         <div className="gallery-container">
-          {images.map((image) => (
-            <img src={image} />
+          {images.map((image, index) => (
+            <img key={index} src={image} />
           ))}
         </div>
       </div>

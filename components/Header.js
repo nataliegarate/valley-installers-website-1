@@ -8,8 +8,9 @@ import {
   faCaretUp,
 } from "@fortawesome/free-solid-svg-icons";
 
-function Header() {
+function Header(props) {
   const [showDropDownContent, setShowDropDownContent] = useState(false);
+  const [currentPage] = useState(props.page);
 
   function handleNavClick() {
     if (showDropDownContent) {
@@ -30,7 +31,7 @@ function Header() {
         <div className="nav">
           <div id="text-container">
             <Link href="/">
-              <p id="name-header">Valley Installers</p>
+              <a id="name-header">Valley Installers</a>
             </Link>
             <div id="right-header">
               <Link href="/about-us">
@@ -67,7 +68,7 @@ function Header() {
             >
               <div className="dropdown">
                 <button className="dropbtn">
-                  <p>About</p>
+                  <p>{currentPage}</p>
                   <div id="icon-container">
                     <div id="icon-border"></div>
                     <FontAwesomeIcon
@@ -76,6 +77,7 @@ function Header() {
                         width: "8px",
                         color: "#999",
                         padding: "0 5px",
+                        margin: "auto",
                       }}
                       id="contact-icon"
                       icon={faCaretDown}
@@ -86,6 +88,7 @@ function Header() {
                         width: "8px",
                         color: "#999",
                         padding: "0 5px",
+                        margin: "auto",
                       }}
                       id="contact-icon"
                       icon={faCaretUp}
@@ -95,10 +98,13 @@ function Header() {
                 <div id="dropdown-content-container">
                   {showDropDownContent && (
                     <div className="dropdown-content">
+                      <Link href="/">
+                        <a>Home</a>
+                      </Link>
                       <Link href="/about-us">
                         <a>About</a>
                       </Link>
-                      <Link href="/about-us">
+                      <Link href="/gallery">
                         <a>Gallery</a>
                       </Link>
                       <a href="mailto:valleyinstallers@yahoo.com">Contact Us</a>
@@ -322,17 +328,6 @@ function Header() {
           margin: 5px;
         }
 
-        .fa-caret-down:before {
-          color: #999;
-          padding: 0 5px;
-          margin-top: 10px;
-        }
-
-        .fa-caret-up:before {
-          color: #999;
-          padding: 0 5px;
-        }
-
         #icon-border {
           border-left: 1px solid #999;
           height: 30px;
@@ -341,14 +336,6 @@ function Header() {
         #icon-container {
           display: flex;
           flex-direction: row;
-        }
-
-        .fa.fa-caret-down {
-          margin-top: 10px;
-        }
-
-        .fa.fa-caret-up {
-          margin-top: 10px;
         }
 
         @media only screen and (max-width: 1070px) {
