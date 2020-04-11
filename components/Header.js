@@ -75,6 +75,7 @@ function Header(props) {
                       style={{
                         display: showDropDownContent ? "none" : "inline",
                         width: "8px",
+                        height: "30px",
                         color: "#999",
                         padding: "0 5px",
                         margin: "auto",
@@ -87,6 +88,7 @@ function Header(props) {
                         display: showDropDownContent ? "inline" : "none",
                         width: "8px",
                         color: "#999",
+                        height: "30px",
                         padding: "0 5px",
                         margin: "auto",
                       }}

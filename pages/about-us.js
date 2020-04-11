@@ -45,6 +45,7 @@ function About() {
       <div className="content-view">
         <img
           className="col-1"
+          id="about-image"
           alt="Kitchen with laminate countertops"
           src="/valley10.jpg"
         />
@@ -86,6 +87,13 @@ function About() {
         @media only screen and (max-width: 870px) {
           #about-text-container p {
             margin-top: 0;
+          }
+          #about-image {
+            order: 2;
+            margin-top: 10px;
+          }
+          #about-text-container {
+            order: 1;
           }
         }
       `}</style>
