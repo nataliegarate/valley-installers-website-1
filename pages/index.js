@@ -91,15 +91,6 @@ function HomeView(props) {
         <style>{`
         .col-2 img {
             width: inherit;
-            }
-
-        .countertop-text {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 0px;
-            align-items: flex-end;
-            margin-right: 20px;
         }
 
         .countertop-sub-text {
@@ -110,6 +101,8 @@ function HomeView(props) {
         #countertop-text h2 {
             text-align: start;
             width: inherit;
+                        margin-top: 0px;
+
         }
 
         #see-gallery {
