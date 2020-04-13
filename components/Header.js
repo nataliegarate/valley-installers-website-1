@@ -220,6 +220,8 @@ function Header(props) {
 
         .image-container-header {
           background-image: url("/valleyheader.jpg");
+          background-size: cover;
+          background-position: center center;
           height: 376px;
           width: 100%;
           font-weight: bold;
