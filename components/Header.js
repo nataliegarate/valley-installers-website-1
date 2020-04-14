@@ -34,12 +34,12 @@ function Header(props) {
               <a id="name-header">Valley Installers</a>
             </Link>
             <div id="right-header">
-              <Link href="/about-us">
+              <Link href="/about-us.html">
                 <a id="about-header" title="About">
                   About
                 </a>
               </Link>
-              <Link href="/gallery">
+              <Link href="/gallery.html">
                 <a id="about-header" title="About">
                   Gallery
                 </a>
@@ -103,10 +103,10 @@ function Header(props) {
                       <Link href="/">
                         <a>Home</a>
                       </Link>
-                      <Link href="/about-us">
+                      <Link href="/about-us.html">
                         <a>About</a>
                       </Link>
-                      <Link href="/gallery">
+                      <Link href="/gallery.html">
                         <a>Gallery</a>
                       </Link>
                       <a href="mailto:valleyinstallers@yahoo.com">Contact Us</a>
@@ -122,7 +122,7 @@ function Header(props) {
         <div className="image-container-header">
           <div id="image-text">
             <h1>Quality Laminte Countertops Serving The Flathead Valley</h1>
-            <Link href="/about-us">
+            <Link href="/about-us.html">
               <a>Learn More About Us →</a>
             </Link>
           </div>

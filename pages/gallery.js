@@ -14,7 +14,6 @@ let images = [
   "/valley1.jpg",
   "/valley5.jpg",
   "/valley4.jpg",
-
   "/valley6.jpg",
   "/valley7.jpg",
   "/valley9.jpg",

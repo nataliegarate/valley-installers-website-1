@@ -72,7 +72,7 @@ function HomeView(props) {
             </p>
 
             <p className="countertop-sub-text" id="see-photos">
-              <Link href="/gallery">
+              <Link href="/gallery.html">
                 <a id="see-gallery" title="See All Photos">
                   See All Photos →
                 </a>
@@ -101,7 +101,7 @@ function HomeView(props) {
         #countertop-text h2 {
             text-align: start;
             width: inherit;
-                        margin-top: 0px;
+            margin-top: 0px;
 
         }
 
