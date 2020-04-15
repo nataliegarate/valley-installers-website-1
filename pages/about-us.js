@@ -95,6 +95,9 @@ function About() {
           #about-text-container {
             order: 1;
           }
+          #about-text-container h2 {
+            margin-top: 0px;
+          }
         }
       `}</style>
     </Layout>
