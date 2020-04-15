@@ -56,6 +56,11 @@ export default function footer() {
         .author-footer #space {
             flex-basis: 5%;
         }
+        @media only screen and (max-width: 460px) {
+          .contact-footer h2 {
+            font-size: 14px;
+        }
+        }
     `}
       </style>
     </div>
