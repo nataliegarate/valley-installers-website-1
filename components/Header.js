@@ -119,7 +119,10 @@ function Header(props) {
           </div>
         </div>
 
-        <div className="image-container-header">
+        <div
+          className="image-container-header"
+          id={props.error && "image-container-header-no-display"}
+        >
           <div id="image-text">
             <h1>Quality Laminte Countertops Serving The Flathead Valley</h1>
             <Link href="/about-us.html">
@@ -340,6 +343,10 @@ function Header(props) {
         #icon-container {
           display: flex;
           flex-direction: row;
+        }
+
+        #image-container-header-no-display {
+          display: none;
         }
 
         @media only screen and (max-width: 1070px) {
