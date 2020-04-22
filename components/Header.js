@@ -124,7 +124,7 @@ function Header(props) {
           id={props.error && "image-container-header-no-display"}
         >
           <div id="image-text">
-            <h1>Quality Laminte Countertops Serving The Flathead Valley</h1>
+            <h1>Quality Laminate Countertops Serving The Flathead Valley</h1>
             <Link href="/about-us">
               <a>Learn More About Us →</a>
             </Link>

@@ -15,7 +15,7 @@ function About() {
         ></meta>
         <meta
           name="keywords"
-          content="laminate countertops, countertop installation, kitchen, bathroom, kalispell, whitefish, coulmbia falls, flathead, bigfork"
+          content="laminate countertops, countertop installation, kitchen, kalispell, whitefish, coulmbia falls, flathead, bigfork"
         ></meta>
         <link rel="canonical" href="https://valleyinstallers.com" />
         <meta name="robots" content="index, follow" />
